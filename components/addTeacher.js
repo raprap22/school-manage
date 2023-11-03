@@ -4,9 +4,7 @@ const addTeacher = ({ onAddTeacher }) => {
   const [name, setNama] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Validasi input di sini
     if (name.trim() === "") {
-      // Tampilkan pesan error
     } else {
       onAddTeacher({ name });
       setNama("");

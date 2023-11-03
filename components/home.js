@@ -5,7 +5,6 @@ import StudyList from "./studyList";
 import AddTeacher from "./addTeacher";
 import AddStudy from "./addStudy";
 import AddClass from "./addClass";
-import { Divider } from "antd";
 
 const Home = () => {
   const [teachers, setTeachers] = useState([]);

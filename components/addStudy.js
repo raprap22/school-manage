@@ -2,13 +2,10 @@ import React, { useState } from "react";
 
 const addStudy = ({ onAddStudy }) => {
   const [studyName, setStudyName] = useState("");
-  // tambahkan state dan validasi lainnya sesuai kebutuhan
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Validasi input di sini
     if (studyName.trim() === "") {
-      // Tampilkan pesan error
     } else {
       onAddStudy({ studyName });
       setStudyName("");

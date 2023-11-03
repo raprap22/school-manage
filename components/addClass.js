@@ -19,7 +19,6 @@ const addClass = ({ onAddClass, guruOptions, classOptions }) => {
       date.trim() === "" ||
       durationClass.trim() === ""
     ) {
-      // Tampilkan pesan error
     } else {
       onAddClass({ className, teacher, study, date, durationClass });
       setClassName("");
